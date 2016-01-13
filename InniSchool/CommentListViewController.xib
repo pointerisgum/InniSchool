@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentListViewController">
+            <connections>
+                <outlet property="keyboardHeight" destination="Hit-QO-OnH" id="vTQ-Zb-O6k"/>
+                <outlet property="tbv_List" destination="oUh-Q8-Fg5" id="ILV-25-RBT"/>
+                <outlet property="tf_Comment" destination="R7a-gY-KtD" id="bG7-cF-aSQ"/>
+                <outlet property="v_Acc" destination="285-jQ-U0o" id="nYI-rA-93h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oUh-Q8-Fg5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="513"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.95686274509803926" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="itT-dj-nGy"/>
+                        <outlet property="delegate" destination="-1" id="S8y-Ch-cIj"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="285-jQ-U0o">
+                    <rect key="frame" x="0.0" y="513" width="320" height="55"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="한줄 리뷰 ^^" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7a-gY-KtD">
+                            <rect key="frame" x="0.0" y="0.0" width="262" height="55"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="ClT-19-ApR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="xH8-XK-Oko"/>
+                            </connections>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eAj-qb-mKL">
+                            <rect key="frame" x="269" y="17" width="1" height="22"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="0.70000000000000007" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="BHB-8n-PKe"/>
+                                <constraint firstAttribute="width" constant="1" id="keF-Tz-Iud"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTV-uO-lmu">
+                            <rect key="frame" x="270" y="0.0" width="50" height="55"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="AxE-pw-bbD"/>
+                                <constraint firstAttribute="width" constant="50" id="n0G-p5-RBG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="게시">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="goAddComment:" destination="-1" eventType="touchUpInside" id="T48-jL-Vbf"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dq2-q7-2zx">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="0.70000000000000007" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="9mI-84-gFU"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kTV-uO-lmu" firstAttribute="leading" secondItem="eAj-qb-mKL" secondAttribute="trailing" id="35f-di-g0z"/>
+                        <constraint firstItem="R7a-gY-KtD" firstAttribute="top" secondItem="285-jQ-U0o" secondAttribute="top" id="5a4-6M-zRy"/>
+                        <constraint firstItem="eAj-qb-mKL" firstAttribute="top" secondItem="285-jQ-U0o" secondAttribute="top" constant="17" id="Gmj-ob-BAe"/>
+                        <constraint firstAttribute="bottom" secondItem="eAj-qb-mKL" secondAttribute="bottom" constant="16" id="K6z-7O-TXF"/>
+                        <constraint firstAttribute="bottom" secondItem="kTV-uO-lmu" secondAttribute="bottom" id="OoN-Mx-Gwb"/>
+                        <constraint firstItem="kTV-uO-lmu" firstAttribute="top" secondItem="285-jQ-U0o" secondAttribute="top" id="adm-KH-up7"/>
+                        <constraint firstItem="eAj-qb-mKL" firstAttribute="leading" secondItem="R7a-gY-KtD" secondAttribute="trailing" constant="7" id="bMC-vl-meK"/>
+                        <constraint firstItem="Dq2-q7-2zx" firstAttribute="top" secondItem="285-jQ-U0o" secondAttribute="top" id="dfP-Xy-hXr"/>
+                        <constraint firstAttribute="bottom" secondItem="R7a-gY-KtD" secondAttribute="bottom" id="f4X-rh-RoG"/>
+                        <constraint firstAttribute="trailing" secondItem="Dq2-q7-2zx" secondAttribute="trailing" id="ffz-NT-CVx"/>
+                        <constraint firstItem="Dq2-q7-2zx" firstAttribute="leading" secondItem="285-jQ-U0o" secondAttribute="leading" id="ilo-fx-XQY"/>
+                        <constraint firstItem="kTV-uO-lmu" firstAttribute="leading" secondItem="eAj-qb-mKL" secondAttribute="trailing" id="oiY-sg-RWv"/>
+                        <constraint firstAttribute="height" constant="55" id="rMd-sO-7rb"/>
+                        <constraint firstItem="R7a-gY-KtD" firstAttribute="leading" secondItem="285-jQ-U0o" secondAttribute="leading" id="sCi-Iy-Kwd"/>
+                        <constraint firstAttribute="trailing" secondItem="kTV-uO-lmu" secondAttribute="trailing" id="zE8-EE-C5X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oUh-Q8-Fg5" secondAttribute="trailing" id="6h2-Uz-beW"/>
+                <constraint firstItem="oUh-Q8-Fg5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Nj-mZ-sbZ"/>
+                <constraint firstAttribute="trailing" secondItem="285-jQ-U0o" secondAttribute="trailing" id="GF6-bk-6c2"/>
+                <constraint firstAttribute="bottom" secondItem="285-jQ-U0o" secondAttribute="bottom" id="Hit-QO-OnH"/>
+                <constraint firstItem="285-jQ-U0o" firstAttribute="top" secondItem="oUh-Q8-Fg5" secondAttribute="bottom" id="ZcC-PY-rZR"/>
+                <constraint firstItem="285-jQ-U0o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eBg-1U-nkW"/>
+                <constraint firstItem="oUh-Q8-Fg5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sTf-Nx-nE1"/>
+            </constraints>
+            <point key="canvasLocation" x="708" y="232"/>
+        </view>
+    </objects>
+</document>

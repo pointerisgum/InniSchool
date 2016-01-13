@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentModifyViewController">
+            <connections>
+                <outlet property="tv_Contents" destination="leH-p9-hSf" id="HfQ-Og-dGi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leH-p9-hSf">
+                    <rect key="frame" x="5" y="5" width="310" height="563"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="cN9-F3-oKv"/>
+                    </connections>
+                </textView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="leH-p9-hSf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="FHf-t9-5Dg"/>
+                <constraint firstItem="leH-p9-hSf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="FdC-H3-F6D"/>
+                <constraint firstAttribute="trailing" secondItem="leH-p9-hSf" secondAttribute="trailing" constant="5" id="LDn-1h-Z80"/>
+                <constraint firstAttribute="bottom" secondItem="leH-p9-hSf" secondAttribute="bottom" id="bf3-iO-WGX"/>
+            </constraints>
+            <point key="canvasLocation" x="573" y="393"/>
+        </view>
+    </objects>
+</document>

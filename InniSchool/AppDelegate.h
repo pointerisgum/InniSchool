@@ -7,9 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAI.h"
+#import "TWTSideMenuViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@interface AppDelegate : UIResponder <UIApplicationDelegate, TWTSideMenuViewControllerDelegate>
 @property (strong, nonatomic) UIWindow *window;
-
+@property(nonatomic, strong) id<GAITracker> tracker;
+@property (nonatomic, strong) TWTSideMenuViewController *sideMenuViewController;
+- (void)initViewControllers;
+- (void)showMainView;
+- (void)showOnlyMainView;
+- (void)showLoginView;
 @end
+
+/*
+ innitest1
+ 1q2w3e4r
+ */
+
+/*
+ com.innisfree.innischool
+ ver : 2.5
+ */
