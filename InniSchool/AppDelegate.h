@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GAI.h"
 #import "TWTSideMenuViewController.h"
-//로웸에서 수정함
+//야호
 @interface AppDelegate : UIResponder <UIApplicationDelegate, TWTSideMenuViewControllerDelegate>
 @property (strong, nonatomic) UIWindow *window;
 @property(nonatomic, strong) id<GAITracker> tracker;
