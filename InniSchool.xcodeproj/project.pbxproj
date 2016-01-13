@@ -4711,7 +4711,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/kimyoung-min/Desktop/YM/InniSchool/InniSchool/Lib/PhotoLibraries/SDWebImage/SDWebImage",
+					"$(PROJECT_DIR)/InniSchool/Lib/PhotoLibraries/SDWebImage",
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -4719,7 +4719,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/kimyoung-min/Desktop/YM/InniSchool/InniSchool/Lib/PhotoLibraries/SDWebImage",
+					"$(PROJECT_DIR)/InniSchool/Lib/PhotoLibraries/SDWebImage",
 				);
 				INFOPLIST_FILE = "InniSchool/InniSchool-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -4747,7 +4747,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/kimyoung-min/Desktop/YM/InniSchool/InniSchool/Lib/PhotoLibraries/SDWebImage/SDWebImage",
+					"$(PROJECT_DIR)/InniSchool/Lib/PhotoLibraries/SDWebImage",
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -4755,7 +4755,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/kimyoung-min/Desktop/YM/InniSchool/InniSchool/Lib/PhotoLibraries/SDWebImage",
+					"$(PROJECT_DIR)/InniSchool/Lib/PhotoLibraries/SDWebImage",
 				);
 				INFOPLIST_FILE = "InniSchool/InniSchool-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -4858,7 +4858,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/kimyoung-min/Desktop/YM/InniSchool/InniSchool/Lib/PhotoLibraries/SDWebImage/SDWebImage",
+					"$(PROJECT_DIR)/InniSchool/Lib/PhotoLibraries/SDWebImage",
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -4866,7 +4866,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"/Users/kimyoung-min/Desktop/YM/InniSchool/InniSchool/Lib/PhotoLibraries/SDWebImage",
+					"$(PROJECT_DIR)/InniSchool/Lib/PhotoLibraries/SDWebImage",
 				);
 				INFOPLIST_FILE = "InniSchool/InniSchool-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
